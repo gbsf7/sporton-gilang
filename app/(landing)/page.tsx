@@ -1,9 +1,13 @@
-import Image from "next/image";
+import CategoriesSection from "./components/home/categories";
+import HeroSection from "./components/home/hero";
+import ProductsSection from "./components/home/products";
 
 export default function Home() {
   return (
-    <main className="bg-primary">
-      <h1>Isit poppin yet?!</h1>
+    <main>
+      <HeroSection />
+      <CategoriesSection />
+      <ProductsSection />
     </main>
   );
 }
