@@ -4,7 +4,7 @@ import { FiSearch, FiShoppingBag } from "react-icons/fi";
 
 const Header = () => {
     return (
-        <header>
+        <header className="sticky top-0 z-50 bg-white shadow-md">
             <div className="flex justify-between gap-10 container mx-auto py-7">
                 <Image 
                     src="/images/logo.svg" 
