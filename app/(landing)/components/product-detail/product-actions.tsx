@@ -24,7 +24,7 @@ const ProductActions = () => {
                 </button>
                 <button 
                     className="cursor-pointer h-1/2 aspect-square flex items-center justify-center"
-                    onClick={() => setQty(qty - 1)}
+                    onClick={() => setQty(qty > 1 ? qty - 1 : qty)}
                 >
                     <FiChevronUp />
                 </button>

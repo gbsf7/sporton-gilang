@@ -1,5 +1,6 @@
 import Image from "next/image"
 import ProductActions from "../../components/product-detail/product-actions";
+import PriceFormatter from "@/app/utils/price-formatter";
 
 const ProductDetail = () => {
     return (
@@ -28,11 +29,7 @@ The SportsOn HyperSoccer v2 is engineered for the player who demands precision, 
             </p>
             <div className="text-primary text-[32px] font-semibold mb-12">
                 {
-                    Intl.NumberFormat('id-ID', {
-                        style: 'currency',
-                        currency: 'IDR',
-                        maximumSignificantDigits: 3,
-                    }).format(458000)
+                    PriceFormatter(458000)
                 }
             </div>
             <ProductActions />
