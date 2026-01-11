@@ -14,12 +14,14 @@ const Header = () => {
     return (
         <header className="sticky top-0 z-50 bg-white shadow-md">
             <div className="flex justify-between gap-10 container mx-auto py-7">
+                <Link href="/">
                 <Image 
                     src="/images/logo.svg" 
                     alt="SportOn Logo" 
                     width={127}
                     height={30}
                 />
+                </Link>
                 <nav className="flex gap-44 font-medium">
                     <Link href="#" className="relative after:content-[''] after:block after:bg-primary after:rounded-full after:h-[3px] after:w-1/2 after:absolute after:left-1/2 after:-translate-x-1/2 after:translate-y-1">Home</Link>
                     <Link href="#">Category</Link>
